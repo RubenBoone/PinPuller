@@ -1,6 +1,7 @@
 [[redericts]]
-from = "/*"
-to = "/pin_puller.html"
+from = "/"
+to = "pin_puller.html"
+status = 200
 
 [[headers]]
 for = "/*"
