@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://b26fmhnu26m4v"]
+
+[ext_resource type="Script" path="res://Assets/Scripts/fluid_ball_template.gd" id="1_nt0fx"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_upqmi"]
+radius = 2.0
+
+[node name="Fluid" type="RigidBody2D"]
+collision_mask = 7
+script = ExtResource("1_nt0fx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_upqmi")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.02, 0.02)

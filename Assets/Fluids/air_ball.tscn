@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://cyi3fu1yb73h7"]
+
+[ext_resource type="PackedScene" uid="uid://b26fmhnu26m4v" path="res://Assets/Templates/fluid_ball_template.tscn" id="1_4dmyk"]
+[ext_resource type="Texture2D" uid="uid://cxfj2bd1x80b6" path="res://resources/fluids/air_ball.png" id="2_cuoyk"]
+
+[node name="AirBall" instance=ExtResource("1_4dmyk")]
+type = 4
+
+[node name="Sprite2D" parent="." index="1"]
+texture = ExtResource("2_cuoyk")

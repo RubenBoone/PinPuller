@@ -1,0 +1,30 @@
+[gd_scene load_steps=4 format=3 uid="uid://cxfb0orr40ook"]
+
+[ext_resource type="Script" path="res://Assets/Scripts/pin.gd" id="1_wbw8x"]
+[ext_resource type="Texture2D" uid="uid://dsw8svc8lfehe" path="res://resources/mechanics/pin.png" id="2_wchm2"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_u722b"]
+radius = 13.0
+height = 228.0
+
+[node name="Pin" type="Node2D"]
+script = ExtResource("1_wbw8x")
+
+[node name="Image" type="Sprite2D" parent="."]
+position = Vector2(-1, -8)
+texture = ExtResource("2_wchm2")
+
+[node name="Marker2D" type="Marker2D" parent="."]
+position = Vector2(0, -46)
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("CapsuleShape2D_u722b")
+
+[node name="RigidBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D"]
+shape = SubResource("CapsuleShape2D_u722b")
+
+[connection signal="input_event" from="Area2D" to="." method="_on_area_2d_input_event"]

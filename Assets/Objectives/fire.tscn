@@ -1,0 +1,15 @@
+[gd_scene load_steps=4 format=3 uid="uid://bv01wvcdkpajs"]
+
+[ext_resource type="PackedScene" uid="uid://d1bipcyjw588" path="res://Assets/Templates/objective_template.tscn" id="1_1bby7"]
+[ext_resource type="Script" path="res://Assets/Scripts/fire.gd" id="2_eghbv"]
+[ext_resource type="Texture2D" uid="uid://bno1q767n6kgv" path="res://resources/objectives/campfire_sheet.png" id="4_mhaxw"]
+
+[node name="Fire" instance=ExtResource("1_1bby7")]
+script = ExtResource("2_eghbv")
+should_turn_on = false
+
+[node name="Sprite2D" parent="." index="1"]
+texture = ExtResource("4_mhaxw")
+hframes = 2
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

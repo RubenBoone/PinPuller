@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://dq51is6ur8rq3"]
+
+[ext_resource type="PackedScene" uid="uid://b26fmhnu26m4v" path="res://Assets/Templates/fluid_ball_template.tscn" id="1_evnrh"]
+[ext_resource type="Texture2D" uid="uid://cvf83mlc4pj4h" path="res://resources/fluids/lava_ball.png" id="2_afedd"]
+
+[node name="LavaBall" instance=ExtResource("1_evnrh")]
+type = 2
+
+[node name="Sprite2D" parent="." index="1"]
+texture = ExtResource("2_afedd")

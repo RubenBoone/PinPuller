@@ -1,0 +1,8 @@
+[gd_scene load_steps=3 format=3 uid="uid://dx0oywc7tjptj"]
+
+[ext_resource type="Script" path="res://Assets/Scripts/fluid_spawner.gd" id="1_4drf2"]
+[ext_resource type="PackedScene" uid="uid://bpsi8pds5fx7h" path="res://Assets/Fluids/water_ball.tscn" id="2_utlad"]
+
+[node name="FluidSpawner" type="Marker2D"]
+script = ExtResource("1_4drf2")
+ball = ExtResource("2_utlad")

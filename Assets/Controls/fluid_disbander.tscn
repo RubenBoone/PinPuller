@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://51i1kin4dq3t"]
+
+[ext_resource type="Script" path="res://Assets/Scripts/fluid_disbander.gd" id="1_n0i1g"]
+
+[node name="FluidDisbander" type="Area2D"]
+collision_layer = 4
+script = ExtResource("1_n0i1g")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

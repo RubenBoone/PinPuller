@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://d1bipcyjw588"]
+
+[ext_resource type="Script" path="res://Assets/Scripts/objective_template.gd" id="1_lcx5t"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_akvdc"]
+size = Vector2(236, 238)
+
+[node name="ObjectiveTemplate" type="Area2D"]
+scale = Vector2(0.4, 0.4)
+script = ExtResource("1_lcx5t")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_akvdc")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
