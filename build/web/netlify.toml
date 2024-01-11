@@ -1,6 +1,6 @@
 [[redericts]]
 from = "/*"
-to = "/build/web/pin_puller.html"
+to = "pin_puller.html"
 
 [[headers]]
 for = "/*"
